@@ -30,7 +30,7 @@ app.get('/led', async (req, res) => {
 
         try {
             // Make an API call to 10.10.10.1/led with the new status as a query parameter
-            await axios.get(`${microIp}/led?state=${newStatus}`);
+            // await axios.get(`${microIp}/led?state=${newStatus}`);
             res.send('LED status updated successfully');
         } catch (error) {
             console.error('Error updating LED status:', error.message);
